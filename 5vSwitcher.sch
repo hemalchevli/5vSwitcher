@@ -5365,12 +5365,19 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="U$1" library="SparkFun" deviceset="OSHW-LOGO" device="S"/>
 <part name="IC1" library="national-semiconductor" deviceset="LM2596" device="S"/>
 <part name="JP1" library="SparkFun" deviceset="M03" device="PTH"/>
-<part name="D1" library="diode" deviceset="SCHOTTKY-DIODE" device="SMC"/>
-<part name="L1" library="SparkFun" deviceset="INDUCTOR" device="H*" technology="1206"/>
+<part name="D1" library="diode" deviceset="SCHOTTKY-DIODE" device="SMC" value="1N5822"/>
+<part name="L1" library="SparkFun" deviceset="INDUCTOR" device="H*" technology="1206" value="100uH"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="2.54" y="-20.32" size="1.778" layer="91">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS.Black Electronics DISCLAIMS ALL OTHER WARRANTIES, EXPRESS 
+OR IMPLIED,REGARDING PRODUCTS, INCLUDING BUT NOT LIMITED TO, ANY IMPLIED WARRANTIESOF MERCHANTABILITY OR FITNESS
+FOR A PARTICULAR PURPOSE Black Electronics may make changes to specifications and product description at any time, without notice.
+The customer must not rely on the absence or characterics of any feature or instruction marked "reserved" or "undefined".
+Black Electronics reserves these for future definition and shall have no responsibility whatsoever for the conflicts or 
+incompatibilities arsing from future changes to them. The product information on the Web Site or Materials is subject to change without notice.
+Do not finalize  design with this information.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -5449,4 +5456,10 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
